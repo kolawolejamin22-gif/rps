@@ -1,7 +1,9 @@
 import random
 # Welcome banner
 print("Welcome to RPS Championship")
-
+# initialize player and computer score
+player_score = 0
+computer_score = 0
 # Validate player input and repeat  option when input is invalid
 while True:
     user_option = input(
