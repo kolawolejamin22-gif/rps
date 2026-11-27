@@ -1,10 +1,8 @@
 import random
-
+# Welcome banner
 print("Welcome to RPS Championship")
 
-player_score = 0
-computer_score = 0
-
+# Validate player input and repeat  option when input is invalid
 while True:
     user_option = input(
         "Choose your option between \n"
@@ -12,20 +10,15 @@ while True:
         "2. Paper\n"
         "3. Scissors\n"
     )
-    try:
-        user_input = int(user_option)
-    except ValueError:
-            print("Please enter a valid number!")
-            continue
-    
 
+    user_input = int(user_option)
 
     if user_input >= 1 and user_input <= 3:
         break
 
     print("Invalid! Choose between 1 and 3")
 
-
+# Computer choice
 choices_list = ["Rock", "Paper", "Scissors"]
 
 computer_choice = random.choice(choices_list)
